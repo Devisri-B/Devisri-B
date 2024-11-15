@@ -3,7 +3,7 @@
 <h1 align="center">Hi 👋, I'm Devi Sri Bandaru</h1>
 <h3 align="center">I am a graduate computer science student with a deep interest in developing intelligent systems using AI and machine learning. My primary focus is on creating solutions that leverage large language models (LLMs) and natural language processing (NLP).</h3>
 
-- 🔭 I’m currently working on **Meal Chatbot**
+- 🔭 I’m currently working on **fine tuning transformers**
 
 <p align="right"><img align="right" src="library_usage.png" alt="Library Usage Pie Chart" width="500" align="right"></p>
 
