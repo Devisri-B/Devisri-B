@@ -9,7 +9,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://www.linkedin.com/in/devi-sri-bandaru-993055328/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="devi sri bandaru" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/devi-sri-bandaru-993055328/" target="blank"><img align="center" alt="devi sri bandaru" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
