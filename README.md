@@ -65,10 +65,4 @@
 
 <p align="right"><img align="right" src="library_usage.png" alt="Library Usage Pie Chart" width="500" align="right"></p>
 
-# Github Activeness
-
-![Devisri's GitHub stats](https://github-readme-stats.vercel.app/api?username=devisri-b&show_icons=true&theme=radical)
-
-![GitHub Profile Summary Card](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=devisri-b&theme=monokai)
-
 ![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs?username=devisri-b&show_icons=true&locale=en&layout=compact&cache_seconds=1800)
