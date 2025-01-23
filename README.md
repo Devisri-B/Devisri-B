@@ -62,7 +62,7 @@
     <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB">
   
 </div>
+<p align="right"><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs?username=devisri-b&show_icons=true&locale=en&layout=compact&cache_seconds=1800" alt="devisri-b" /></p>
 
-<p align="right"><img align="right" src="library_usage.png" alt="Library Usage Pie Chart" width="500" align="right"></p>
+<p align="left"><img align="left" src="library_usage.png" alt="Library Usage Pie Chart" width="600" align="left"></p>
 
-![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs?username=devisri-b&show_icons=true&locale=en&layout=compact&cache_seconds=1800)
