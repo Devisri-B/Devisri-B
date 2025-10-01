@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-skyblue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
   <a href="https://medium.com/@bandarudevisri.ds">
-    <img src="https://img.shields.io/badge/Medium-white?style=for-the-badge&logo=Medium&logoColor=grey" alt="Medium Badge"/>
+    <img src="https://img.shields.io/badge/Medium-black?style=for-the-badge&logo=Medium&logoColor=grey" alt="Medium Badge"/>
   </a>  
 </div>
 
@@ -26,6 +26,10 @@
 ### Programming Languages
 <div align="center">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+    <img src="https://img.shields.io/badge/ABAP-orange?style=for-the-badge&logo=sap&logoColor=white" alt="ABAP")>
+    <img src="https://img.shields.io/badge/HTML-555555?style=for-the-badge&logo=sap&logoColor=white" alt="HTML")>
+    <img src="https://img.shields.io/badge/CSS-2B548F?style=for-the-badge&logo=sap&logoColor=white" alt="CSS")
+    
 </div>
 
 ### Data & Machine Learning
@@ -53,7 +57,7 @@
 ### Version Control & Collaboration
 <div align="center">
     <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-    <img src="https://img.shields.io/badge/GitLab-FCA121?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab">
+    <img src="https://img.shields.io/badge/GitHub-FCA121?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitHub">
 </div>
 
 ### IDE & Development Tools
