@@ -4,9 +4,7 @@
  <h3 align="center">I am a graduate computer science student with a deep interest in developing intelligent systems using AI and machine learning. My primary focus is on creating solutions that leverage large language models (LLMs) and natural language processing (NLP).</h3>
 
 - 👨🏼‍💻 I’m addicted to learning and growing every day.
-- 🔭 I’m currently working on **fine tuning transformers**
 - Passionate to apply my skills in healthcare and social good projects to positively impact the world.
-
 
 
 # Connect with me on
