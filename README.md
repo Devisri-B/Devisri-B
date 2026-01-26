@@ -67,3 +67,26 @@
 
 <p align="left"><img align="left" src="library_usage.png" alt="Library Usage Pie Chart" width="700" align="left"></p>
 
+## GitHub Stats
+
+<div align="center">
+
+![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Devisri-B&theme=default)
+
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Devisri-B&theme=default)
+![Top Languages by Repo](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Devisri-B&theme=default)
+
+![Top Languages by Commit](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Devisri-B&theme=default)
+![Productive Time](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Devisri-B&theme=default&utcOffset=-5)
+
+[![Devisri's GitHub stats](https://github-readme-stats.vercel.app/api?username=Devisri-B&show_icons=true&theme=default)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Devisri-B&layout=compact&theme=default)](https://github.com/anuraghazra/github-readme-stats)
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Devisri-B&theme=default)](https://git.io/streak-stats)
+
+</div>
+
+
+
+
+
