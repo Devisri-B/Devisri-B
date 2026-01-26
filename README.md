@@ -66,6 +66,7 @@
 </div>
 
 <p align="left"><img align="left" src="library_usage.png" alt="Library Usage Pie Chart" width="700" align="left"></p>
+![Library Usage](https://github.com/Devisri-B/Devisri-B/blob/main/library_usage.png?raw=true)
 
 ## GitHub Stats
 
