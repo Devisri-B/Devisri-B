@@ -1,38 +1,19 @@
-name: Update Library Stats
+name: Latest blog post workflow
 on:
-  schedule:
+  schedule: # Run workflow automatically
     - cron: '0 0 * * 0' 
-  workflow_dispatch:
-
+  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
 permissions:
-  contents: write
+  contents: write # To write the generated contents to the readme
 
 jobs:
-  build:
+  update-readme-with-blog:
+    name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Pull in dev.to posts
+        uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          python-version: '3.9'
-          
-      - name: Install Dependencies
-        run: pip install matplotlib requests
-        
-      - name: Generate Chart
-        run: python generate_pie_chart.py
-        
-      - name: Commit and Push
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add library_usage.png
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-          git commit -m "Update library usage chart"
-          git pull --rebase
-          git push
+          feed_list: "https://medium.com/feed/@bandarudevisri.ds"
