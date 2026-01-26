@@ -1,13 +1,18 @@
 <h1 align="center">Hi 👋, I'm Devi Sri Bandaru</h1>
 
 <h3 align="center">
-  I am a computer science student grauate with a deep interest in developing intelligent systems using AI and machine learning. My primary focus is on creating solutions that leverage large language models (LLMs) and natural language processing (NLP).
+  I don't just train models; I engineer resilient AI systems.
+  <br/>
+  My passion lies in taking fragile LLM prototypes and hardening them into scalable, agentic microservices. Whether it's architecting complex RAG pipelines or optimizing open-source tools, I am obsessed with the intersection of high-performance code and cognitive intelligence.
 </h3>
 
 <div align="left">
 
 - 👨🏼‍💻 I’m addicted to learning and growing every day.
 - 🎓 Education: **MS in Computer Science** from Kent State University (GPA: 3.97)
+- 📦 **Open Source:** Creator of tprdbreader a library that speeds up research workflows.
+  [![PyPI Version](https://img.shields.io/pypi/v/tprdbreader?style=flat-square&color=blue)](https://pypi.org/project/tprdbreader/)
+  [![Downloads](https://img.shields.io/pypi/dm/tprdbreader?style=flat-square&color=green)](https://pypi.org/project/tprdbreader/)
 - Passionate to apply my skills in healthcare and social good projects to positively impact the world.
 
 </div>
@@ -104,30 +109,20 @@
 <br/>
 
 <div align="center">
-    <img src="https://github.com/Devisri-B/Devisri-B/blob/main/library_usage.png?raw=true" alt="Library Usage" width="500">
+    <img src="https://github.com/Devisri-B/Devisri-B/blob/main/library_usage.png?raw=true" alt="Library Usage" width="600">
 </div>
 
-<h2 align="center">Open Source Contributions</h2>
 
-<div align="center">
-
-**tprdbreader** - A Python library for optimized data preprocessing.
-
-<br/>
-
-[![PyPI Version](https://img.shields.io/pypi/v/tprdbreader?style=flat-square&color=blue)](https://pypi.org/project/tprdbreader/)
-[![Downloads](https://img.shields.io/pypi/dm/tprdbreader?style=flat-square&color=green)](https://pypi.org/project/tprdbreader/)
-
-</div>
-
-<h2 align="center"> Latest Blog Posts</h2>
+<h2 align="center"> My Latest Blog Posts</h2>
+<div align="left">
+  
 <!-- BLOG-POST-LIST:START -->
 - [Beyond the Curve: A Holistic Guide to Activation Functions &lpar;From Sigmoid to SwiGLU&rpar;](https://ai.plainenglish.io/beyond-the-curve-a-holistic-guide-to-activation-functions-from-sigmoid-to-swiglu-3e96faaa7a84?source=rss-4d771f77714e------2)
 - [The Student’s Guide to SAP Certification: How to Get It for Free and Pass with AI](https://medium.com/@bandarudevisri.ds/the-students-guide-to-sap-certification-how-to-get-it-for-free-and-pass-with-ai-d0bbdf78e26a?source=rss-4d771f77714e------2)
 - [My Journey to Passing the GitHub Foundations Exam in 15 Days &lpar;as a Complete Beginner&rpar;](https://medium.com/@bandarudevisri.ds/my-journey-to-passing-the-github-foundations-exam-in-15-days-as-a-complete-beginner-0197dcc7227d?source=rss-4d771f77714e------2)
 - [A Beginner’s Guide to Mastering Git and GitHub: From Local Repos to Cloud Collaboration](https://medium.com/@bandarudevisri.ds/a-beginners-guide-to-mastering-git-and-github-from-local-repos-to-cloud-collaboration-faf52821ba30?source=rss-4d771f77714e------2)
 - [A Comprehensive Guide to Linear Regression and Core Machine Learning Concepts](https://medium.com/@bandarudevisri.ds/a-comprehensive-guide-to-linear-regression-and-core-machine-learning-concepts-90c648c81f35?source=rss-4d771f77714e------2)<!-- BLOG-POST-LIST:END -->
-
+</div>
 <br/>
 
 <h2 align="center">GitHub Stats</h2>
