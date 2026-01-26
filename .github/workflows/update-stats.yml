@@ -30,4 +30,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add library_usage.png
           git commit -m "Update library usage chart" || exit 0
+          git pull --rebase
           git push
