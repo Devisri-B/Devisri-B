@@ -1,0 +1,30 @@
+name: Update Library Stats
+on:
+  schedule:
+    - cron: '0 0 * * 0' 
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          
+      - name: Install Dependencies
+        run: pip install matplotlib requests
+        
+      - name: Generate Chart
+        run: python generate_pie_chart.py
+        
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add library_usage.png
+          git commit -m "Update library usage chart" || exit 0
+          git push
