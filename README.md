@@ -120,7 +120,7 @@
 
 </div>
 
-<h2 align="center">✍️ Latest Blog Posts</h2>
+## ✍️ Latest Blog Posts
 
 <br/>
 
@@ -138,7 +138,9 @@
 </a>
 
 <br/>
-</div>
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=Devisri-B)](https://git.io/streak-stats)
+</div>
+
+
 
