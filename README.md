@@ -138,9 +138,7 @@
 </a>
 
 <br/>
-
-<a href="https://git.io/streak-stats">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Devisri-B&theme=default&hide_border=true" height="170" alt="Streak" />
-</a>
-
 </div>
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=Devisri-B)](https://git.io/streak-stats)
+
