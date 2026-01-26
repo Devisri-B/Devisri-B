@@ -126,8 +126,7 @@
 - [The Student’s Guide to SAP Certification: How to Get It for Free and Pass with AI](https://medium.com/@bandarudevisri.ds/the-students-guide-to-sap-certification-how-to-get-it-for-free-and-pass-with-ai-d0bbdf78e26a?source=rss-4d771f77714e------2)
 - [My Journey to Passing the GitHub Foundations Exam in 15 Days &lpar;as a Complete Beginner&rpar;](https://medium.com/@bandarudevisri.ds/my-journey-to-passing-the-github-foundations-exam-in-15-days-as-a-complete-beginner-0197dcc7227d?source=rss-4d771f77714e------2)
 - [A Beginner’s Guide to Mastering Git and GitHub: From Local Repos to Cloud Collaboration](https://medium.com/@bandarudevisri.ds/a-beginners-guide-to-mastering-git-and-github-from-local-repos-to-cloud-collaboration-faf52821ba30?source=rss-4d771f77714e------2)
-- [A Comprehensive Guide to Linear Regression and Core Machine Learning Concepts](https://medium.com/@bandarudevisri.ds/a-comprehensive-guide-to-linear-regression-and-core-machine-learning-concepts-90c648c81f35?source=rss-4d771f77714e------2)
-<!-- BLOG-POST-LIST:END -->
+- [A Comprehensive Guide to Linear Regression and Core Machine Learning Concepts](https://medium.com/@bandarudevisri.ds/a-comprehensive-guide-to-linear-regression-and-core-machine-learning-concepts-90c648c81f35?source=rss-4d771f77714e------2)<!-- BLOG-POST-LIST:END -->
 
 <br/>
 
