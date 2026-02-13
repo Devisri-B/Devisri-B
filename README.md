@@ -9,7 +9,7 @@
 <div align="left">
 
 - 👨🏼‍💻 I’m addicted to learning and growing every day.
-- 🎓 Education: **MS in Computer Science** from Kent State University (GPA: 3.97)
+- 🎓 Education: **MS in Computer Science** from Kent State University (GPA: 3.97 / 4)
 - 📦 **Open Source:** Creator of tprdbreader a library that speeds up research workflows.
   [![PyPI Version](https://img.shields.io/pypi/v/tprdbreader?style=flat-square&color=blue)](https://pypi.org/project/tprdbreader/)
   [![Downloads](https://img.shields.io/pypi/dm/tprdbreader?style=flat-square&color=green)](https://pypi.org/project/tprdbreader/)
