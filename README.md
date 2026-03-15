@@ -117,11 +117,11 @@
 <div align="left">
   
 <!-- BLOG-POST-LIST:START -->
-- [Stop Paying for Tokens: Run Private LLMs on Your Laptop with Docker](https://medium.com/@bandarudevisri.ds/stop-paying-for-tokens-run-private-llms-on-your-laptop-with-docker-0b5e7ac55743?source=rss-4d771f77714e------2)
+- [Every Microsoft PL-300: Power BI Data Analyst Associate certification Trap in One Article, Plus the…](https://medium.com/@bandarudevisri.ds/every-microsoft-pl-300-power-bi-data-analyst-associate-certification-trap-in-one-article-plus-the-4ea33451fa68?source=rss-4d771f77714e------2)
+- [Stop Paying for Tokens: Run Private LLMs on Your Laptop with Docker](https://medium.com/codetodeploy/stop-paying-for-tokens-run-private-llms-on-your-laptop-with-docker-0b5e7ac55743?source=rss-4d771f77714e------2)
 - [Beyond the Curve: A Holistic Guide to Activation Functions &lpar;From Sigmoid to SwiGLU&rpar;](https://ai.plainenglish.io/beyond-the-curve-a-holistic-guide-to-activation-functions-from-sigmoid-to-swiglu-3e96faaa7a84?source=rss-4d771f77714e------2)
 - [The Student’s Guide to SAP Certification: How to Get It for Free and Pass with AI](https://medium.com/codetodeploy/the-students-guide-to-sap-certification-how-to-get-it-for-free-and-pass-with-ai-d0bbdf78e26a?source=rss-4d771f77714e------2)
-- [My Journey to Passing the GitHub Foundations Exam in 15 Days &lpar;as a Complete Beginner&rpar;](https://medium.com/codetodeploy/my-journey-to-passing-the-github-foundations-exam-in-15-days-as-a-complete-beginner-0197dcc7227d?source=rss-4d771f77714e------2)
-- [A Beginner’s Guide to Mastering Git and GitHub: From Local Repos to Cloud Collaboration](https://medium.com/@bandarudevisri.ds/a-beginners-guide-to-mastering-git-and-github-from-local-repos-to-cloud-collaboration-faf52821ba30?source=rss-4d771f77714e------2)<!-- BLOG-POST-LIST:END -->
+- [My Journey to Passing the GitHub Foundations Exam in 15 Days &lpar;as a Complete Beginner&rpar;](https://medium.com/codetodeploy/my-journey-to-passing-the-github-foundations-exam-in-15-days-as-a-complete-beginner-0197dcc7227d?source=rss-4d771f77714e------2)<!-- BLOG-POST-LIST:END -->
 </div>
 <br/>
 
