@@ -117,7 +117,7 @@
 <div align="left">
   
 <!-- BLOG-POST-LIST:START -->
-- [Every Microsoft PL-300: Power BI Data Analyst Associate certification Trap in One Article, Plus the…](https://medium.com/@bandarudevisri.ds/every-microsoft-pl-300-power-bi-data-analyst-associate-certification-trap-in-one-article-plus-the-4ea33451fa68?source=rss-4d771f77714e------2)
+- [Every Microsoft PL-300: Power BI Data Analyst Associate certification Trap in One Article, Plus the…](https://ai.plainenglish.io/every-microsoft-pl-300-power-bi-data-analyst-associate-certification-trap-in-one-article-plus-the-4ea33451fa68?source=rss-4d771f77714e------2)
 - [Stop Paying for Tokens: Run Private LLMs on Your Laptop with Docker](https://medium.com/codetodeploy/stop-paying-for-tokens-run-private-llms-on-your-laptop-with-docker-0b5e7ac55743?source=rss-4d771f77714e------2)
 - [Beyond the Curve: A Holistic Guide to Activation Functions &lpar;From Sigmoid to SwiGLU&rpar;](https://ai.plainenglish.io/beyond-the-curve-a-holistic-guide-to-activation-functions-from-sigmoid-to-swiglu-3e96faaa7a84?source=rss-4d771f77714e------2)
 - [The Student’s Guide to SAP Certification: How to Get It for Free and Pass with AI](https://medium.com/codetodeploy/the-students-guide-to-sap-certification-how-to-get-it-for-free-and-pass-with-ai-d0bbdf78e26a?source=rss-4d771f77714e------2)
