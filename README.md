@@ -40,6 +40,7 @@
 <h3 align="center">Programming Languages</h3>
 <div align="center">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
     <img src="https://img.shields.io/badge/ABAP-orange?style=for-the-badge&logo=sap&logoColor=white" alt="ABAP">
     <img src="https://img.shields.io/badge/HTML-555555?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
     <img src="https://img.shields.io/badge/CSS-2B548F?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
@@ -57,6 +58,7 @@
 <h3 align="center">LLM & NLP Tools</h3>
 <div align="center">
     <img src="https://img.shields.io/badge/LangChain-121212?style=for-the-badge&logo=chainlink&logoColor=white" alt="LangChain">
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangGraph">
     <img src="https://img.shields.io/badge/LlamaIndex-000000?style=for-the-badge&logo=meta&logoColor=white" alt="LlamaIndex">
     <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face">
     <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI">
@@ -134,13 +136,13 @@
 <br/>
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Devisri-B&theme=default" height="170" alt="Stats" />
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Devisri-B&layout=compact&theme=default&hide_border=true" height="170" alt="Top Languages" />
+<a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Devisri-B&theme=default" height="170" alt="Top Languages"/>
+</a>
 </a>
 
 <br/>
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=Devisri-B)](https://git.io/streak-stats)
+<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Devisri-B&hide_border=true&border_radius=5.6&date_format=M%20j%5B%2C%20Y%5D&exclude_days=Sun" alt="GitHub Streak" /></a>
 </div>
 
 
