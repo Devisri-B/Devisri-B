@@ -111,7 +111,7 @@
 <br/>
 
 <div align="center">
-    <img src="https://github.com/Devisri-B/Devisri-B/blob/main/library_usage.png?raw=true" alt="Library Usage" width="600">
+    <img src="https://github.com/Devisri-B/Devisri-B/blob/main/library_usage.png?raw=true" alt="Library Usage" width="1000">
 </div>
 
 
