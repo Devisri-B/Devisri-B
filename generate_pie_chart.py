@@ -1,25 +1,19 @@
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+import squarify
 import requests
 from collections import Counter
 import re
 import os
-import numpy as np
 
 USERNAME = "Devisri-B"
 
 TARGET_LIBRARIES = [
-    # Core Data
     "pandas", "numpy", "scipy", "matplotlib", "seaborn",
-    # Classical ML
     "sklearn", "xgboost", "lightgbm", "catboost",
-    # Deep Learning
     "tensorflow", "torch", "keras",
-    # LLM / GenAI
     "langchain", "openai", "gemini", "transformers", "llamaindex",
-    # CV & MLOps
     "cv2", "mlflow", "fastapi",
-    # Vector DBs
     "faiss", "pinecone", "chromadb",
 ]
 
@@ -49,14 +43,13 @@ SEARCH_PATTERNS = {
     "chromadb":    r'\b(import\s+chromadb|from\s+chromadb|chromadb)',
 }
 
-# Category grouping for colors
 CATEGORIES = {
-    "Core Data":     {"libs": ["pandas","numpy","scipy","matplotlib","seaborn"],     "color": "#1f77b4"},
-    "Classical ML":  {"libs": ["sklearn","xgboost","lightgbm","catboost"],           "color": "#ff7f0e"},
-    "Deep Learning": {"libs": ["tensorflow","torch","keras"],                        "color": "#d62728"},
-    "LLM / GenAI":   {"libs": ["langchain","openai","gemini","transformers","llamaindex"], "color": "#9467bd"},
-    "CV & MLOps":    {"libs": ["cv2","mlflow","fastapi"],                            "color": "#2ca02c"},
-    "Vector DBs":    {"libs": ["faiss","pinecone","chromadb"],                       "color": "#17becf"},
+    "Core Data":     {"libs": ["pandas","numpy","scipy","matplotlib","seaborn"],          "color": "#1f6feb"},
+    "Classical ML":  {"libs": ["sklearn","xgboost","lightgbm","catboost"],                "color": "#f78166"},
+    "Deep Learning": {"libs": ["tensorflow","torch","keras"],                             "color": "#db6d28"},
+    "LLM / GenAI":   {"libs": ["langchain","openai","gemini","transformers","llamaindex"],"color": "#8957e5"},
+    "CV & MLOps":    {"libs": ["cv2","mlflow","fastapi"],                                 "color": "#3fb950"},
+    "Vector DBs":    {"libs": ["faiss","pinecone","chromadb"],                            "color": "#39c5cf"},
 }
 
 def get_repos(username):
@@ -113,56 +106,43 @@ def generate_chart():
         print("No library usage found, using fallback data")
         total_counts = Counter({lib: 1 for lib in TARGET_LIBRARIES})
 
-    labels = [item[0] for item in total_counts.most_common()]
-    sizes  = [item[1] for item in total_counts.most_common()]
-    n = len(labels)
-
-    # Layout: spiral/grid placement so bubbles don't overlap
-    np.random.seed(42)
-    cols = int(np.ceil(np.sqrt(n * 1.6)))
-    rows = int(np.ceil(n / cols))
-    x_pos, y_pos = [], []
-    for i in range(n):
-        x_pos.append((i % cols) + np.random.uniform(-0.2, 0.2))
-        y_pos.append((i // cols) + np.random.uniform(-0.2, 0.2))
-
-    max_size = max(sizes)
-    bubble_sizes = [((s / max_size) * 3000) + 400 for s in sizes]
+    sorted_items = total_counts.most_common()
+    labels = [item[0] for item in sorted_items]
+    sizes  = [item[1] for item in sorted_items]
     colors = [get_color(lib) for lib in labels]
 
     fig, ax = plt.subplots(figsize=(14, 8))
-    fig.patch.set_facecolor('#0d1117')   # GitHub dark background
+    fig.patch.set_facecolor('#0d1117')
     ax.set_facecolor('#0d1117')
 
-    scatter = ax.scatter(x_pos, y_pos, s=bubble_sizes, c=colors,
-                         alpha=0.85, edgecolors='white', linewidths=0.8)
+    squarify.plot(
+        sizes=sizes,
+        label=[f"{l}\n{s} repos" for l, s in zip(labels, sizes)],
+        color=colors,
+        alpha=0.88,
+        edgecolor='#0d1117',
+        linewidth=2,
+        text_kwargs={'fontsize': 9, 'fontweight': 'bold', 'color': 'white'},
+        ax=ax
+    )
 
-    for i, (label, size, x, y) in enumerate(zip(labels, sizes, x_pos, y_pos)):
-        ax.text(x, y + 0.01, label, ha='center', va='center',
-                fontsize=max(7, min(11, 150 // n)),
-                fontweight='bold', color='white')
-        ax.text(x, y - 0.22, f'{size}', ha='center', va='center',
-                fontsize=7, color='#cccccc')
-
-    # Legend
+    # Category legend
     legend_patches = [
         mpatches.Patch(color=info["color"], label=cat)
         for cat, info in CATEGORIES.items()
     ]
     ax.legend(handles=legend_patches, loc='lower right',
-              framealpha=0.2, labelcolor='white',
+              framealpha=0.3, labelcolor='white',
               facecolor='#161b22', edgecolor='#30363d', fontsize=9)
 
     ax.set_title('Library Usage Across My Repositories',
                  fontsize=15, fontweight='bold', color='white', pad=15)
-    ax.set_xlim(-0.8, cols - 0.2)
-    ax.set_ylim(-0.8, rows - 0.2)
     ax.axis('off')
 
     plt.tight_layout()
     plt.savefig('library_usage.png', dpi=150, bbox_inches='tight',
                 facecolor='#0d1117')
-    print("Bubble chart generated successfully!")
+    print("Treemap generated successfully!")
     for lib, count in total_counts.most_common():
         print(f"  {lib}: {count} repos")
 
