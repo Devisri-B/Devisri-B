@@ -101,50 +101,86 @@ def get_color(lib):
     return "#aaaaaa"
 
 
-def add_scaled_labels(ax, rects, labels, sizes):
-    """Add text labels that scale with box size and clip to box boundaries."""
+def add_labels(ax, rects, labels, sizes):
+    """Draw labels scaled to fit each box, with a large minimum so text stays visible."""
+    renderer = ax.get_figure().canvas.get_renderer()
     total = sum(sizes)
-    norm_sizes = [s / total for s in sizes]
-    for rect, label, norm_size in zip(rects, labels, norm_sizes):
-        x = rect['x']
-        y = rect['y']
-        w = rect['dx']
-        h = rect['dy']
-        if w < 5 or h < 5:
+
+    for rect, label, size in zip(rects, labels, sizes):
+        x  = rect['x']
+        y  = rect['y']
+        w  = rect['dx']
+        h  = rect['dy']
+
+        # Convert box to display pixels
+        x0d, y0d = ax.transData.transform((x,     y))
+        x1d, y1d = ax.transData.transform((x + w, y + h))
+        box_w_px = abs(x1d - x0d)
+        box_h_px = abs(y1d - y0d)
+
+        # Skip truly tiny boxes (less than 40px wide or tall)
+        if box_w_px < 40 or box_h_px < 20:
             continue
-        font_size = max(7, min(20, 20 * (norm_size ** 0.35)))
+
+        parts     = label.split('\n')
+        name      = parts[0]
+        count_str = parts[1] if len(parts) > 1 else ''
+
+        # --- shrink-to-fit: start at 20, shrink until name fits width ---
+        fs = 20
+        while fs >= 8:
+            txt_test = ax.text(0, -9999, name,
+                               fontsize=fs, fontweight='bold')
+            bb = txt_test.get_window_extent(renderer=renderer)
+            txt_test.remove()
+            if bb.width <= box_w_px * 0.90:
+                break
+            fs -= 1
+
+        # If even size 8 doesn't fit width, skip
+        if fs < 8:
+            continue
+
         cx = x + w / 2
         cy = y + h / 2
-        parts = label.split('\n')
-        name = parts[0]
-        count_str = parts[1] if len(parts) > 1 else ''
-        txt = ax.text(
-            cx, cy, name,
-            ha='center', va='center',
-            fontsize=font_size, fontweight='bold', color='white',
-            clip_on=True,
-            wrap=False,
-        )
-        renderer = ax.get_figure().canvas.get_renderer()
-        x0_disp, y0_disp = ax.transData.transform((x, y))
-        x1_disp, y1_disp = ax.transData.transform((x + w, y + h))
-        box_w_disp = abs(x1_disp - x0_disp)
-        box_h_disp = abs(y1_disp - y0_disp)
-        while font_size > 7:
-            bbox = txt.get_window_extent(renderer=renderer)
-            if bbox.width <= box_w_disp * 0.92 and bbox.height <= box_h_disp * 0.45:
-                break
-            font_size -= 1
-            txt.set_fontsize(font_size)
-        bbox = txt.get_window_extent(renderer=renderer)
-        if count_str and box_h_disp > bbox.height * 2.2:
-            txt.set_position((cx, cy + bbox.height * 0.3))
-            ax.text(
-                cx, cy - bbox.height * 0.3, count_str,
-                ha='center', va='center',
-                fontsize=max(6, font_size - 3), color='white',
-                clip_on=True,
-            )
+
+        # Decide whether to show count line
+        show_count = False
+        if count_str:
+            fs_count = max(8, fs - 4)
+            txt_test2 = ax.text(0, -9999, count_str, fontsize=fs_count)
+            bb2 = txt_test2.get_window_extent(renderer=renderer)
+            txt_test2.remove()
+            # Need room for both lines (name height + count height + gap)
+            txt_main = ax.text(0, -9999, name,
+                               fontsize=fs, fontweight='bold')
+            bb_main = txt_main.get_window_extent(renderer=renderer)
+            txt_main.remove()
+            needed_h = bb_main.height + bb2.height + 4
+            if needed_h <= box_h_px * 0.88:
+                show_count = True
+
+        if show_count:
+            fs_count = max(8, fs - 4)
+            # Offset name up, count down
+            txt_main2 = ax.text(0, -9999, name,
+                                fontsize=fs, fontweight='bold')
+            bb_main2 = txt_main2.get_window_extent(renderer=renderer)
+            txt_main2.remove()
+            offset = (bb_main2.height / 2 + 2) / (ax.get_window_extent(renderer=renderer).height / 100)
+            ax.text(cx, cy + offset, name,
+                    ha='center', va='center',
+                    fontsize=fs, fontweight='bold', color='white',
+                    clip_on=True)
+            ax.text(cx, cy - offset, count_str,
+                    ha='center', va='center',
+                    fontsize=fs_count, color='white',
+                    clip_on=True)
+        else:
+            ax.text(cx, cy, name,
+                    ha='center', va='center',
+                    fontsize=fs, fontweight='bold', color='white',
+                    clip_on=True)
 
 
 def generate_chart():
@@ -181,7 +217,7 @@ def generate_chart():
     )
 
     full_labels = [f"{l}\n{s} repos" for l, s in zip(labels, sizes)]
-    add_scaled_labels(ax, rects, full_labels, sizes)
+    add_labels(ax, rects, full_labels, sizes)
 
     legend_patches = [
         mpatches.Patch(color=info["color"], label=cat)
