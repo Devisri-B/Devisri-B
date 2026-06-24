@@ -28,9 +28,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git pull --rebase origin main        # pull FIRST
           git add library_usage.png
-          git diff --staged --quiet && echo "No changes" && exit 0
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "Update library usage chart [skip ci]"
           git push
         env:
