@@ -12,7 +12,7 @@ TARGET_LIBRARIES = [
     "pandas", "numpy", "scipy", "matplotlib", "seaborn",
     "sklearn", "xgboost", "lightgbm", "catboost",
     "tensorflow", "torch", "keras",
-    "langchain", "openai", "gemini", "transformers", "llamaindex",
+    "langchain", "langgraph", "openai", "gemini", "transformers", "llamaindex",
     "cv2", "mlflow", "fastapi",
     "faiss", "pinecone", "chromadb",
 ]
@@ -31,6 +31,7 @@ SEARCH_PATTERNS = {
     "torch":       r'\b(import\s+torch|from\s+torch|torch)',
     "keras":       r'\b(import\s+keras|from\s+keras|keras)',
     "langchain":   r'\b(import\s+langchain|from\s+langchain|langchain)',
+    "langgraph":   r'\b(import\s+langgraph|from\s+langgraph|langgraph)',
     "openai":      r'\b(import\s+openai|from\s+openai|openai)',
     "gemini":      r'\b(import\s+google\.generativeai|from\s+google\.generativeai|google-generativeai|gemini)',
     "transformers":r'\b(import\s+transformers|from\s+transformers|transformers)',
@@ -47,7 +48,7 @@ CATEGORIES = {
     "Core Data":     {"libs": ["pandas","numpy","scipy","matplotlib","seaborn"],          "color": "#1f6feb"},
     "Classical ML":  {"libs": ["sklearn","xgboost","lightgbm","catboost"],                "color": "#f78166"},
     "Deep Learning": {"libs": ["tensorflow","torch","keras"],                             "color": "#db6d28"},
-    "LLM / GenAI":   {"libs": ["langchain","openai","gemini","transformers","llamaindex"],"color": "#8957e5"},
+    "LLM / GenAI":   {"libs": ["langchain","langgraph","openai","gemini","transformers","llamaindex"],"color": "#8957e5"},
     "CV & MLOps":    {"libs": ["cv2","mlflow","fastapi"],                                 "color": "#3fb950"},
     "Vector DBs":    {"libs": ["faiss","pinecone","chromadb"],                            "color": "#39c5cf"},
 }
@@ -122,7 +123,7 @@ def generate_chart():
         alpha=0.88,
         edgecolor='#0d1117',
         linewidth=2,
-        text_kwargs={'fontsize': 20, 'fontweight': 'bold', 'color': 'white'},
+        text_kwargs={'fontsize': 25, 'fontweight': 'bold', 'color': 'white'},
         ax=ax
     )
 
@@ -131,7 +132,7 @@ def generate_chart():
         mpatches.Patch(color=info["color"], label=cat)
         for cat, info in CATEGORIES.items()
     ]
-    ax.legend(handles=legend_patches, loc='lower right',
+    ax.legend(handles=legend_patches, loc='upper left',
               framealpha=0.3, labelcolor='white',
               facecolor='#161b22', edgecolor='#30363d', fontsize=9)
 
