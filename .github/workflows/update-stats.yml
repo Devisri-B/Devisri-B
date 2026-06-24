@@ -19,7 +19,7 @@ jobs:
           python-version: '3.9'
           
       - name: Install Dependencies
-        run: pip install matplotlib requests
+        run: pip install matplotlib requests squarify
         
       - name: Generate Chart
         run: python generate_pie_chart.py
