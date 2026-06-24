@@ -122,7 +122,7 @@ def generate_chart():
         alpha=0.88,
         edgecolor='#0d1117',
         linewidth=2,
-        text_kwargs={'fontsize': 15, 'fontweight': 'bold', 'color': 'white'},
+        text_kwargs={'fontsize': 20, 'fontweight': 'bold', 'color': 'white'},
         ax=ax
     )
 
@@ -136,7 +136,7 @@ def generate_chart():
               facecolor='#161b22', edgecolor='#30363d', fontsize=9)
 
     ax.set_title('Library Usage Across My Repositories',
-                 fontsize=20, fontweight='bold', color='white', pad=15)
+                 fontsize=30, fontweight='bold', color='white', pad=15)
     ax.axis('off')
 
     plt.tight_layout()
