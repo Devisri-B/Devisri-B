@@ -123,7 +123,7 @@ def generate_chart():
         alpha=0.88,
         edgecolor='#0d1117',
         linewidth=2,
-        text_kwargs={'fontsize': 25, 'fontweight': 'bold', 'color': 'white'},
+        text_kwargs={'fontsize': 20, 'fontweight': 'bold', 'color': 'white'},
         ax=ax
     )
 
