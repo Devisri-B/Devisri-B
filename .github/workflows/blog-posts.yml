@@ -16,6 +16,6 @@ jobs:
       - name: Pull in dev.to posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "https://medium.com/feed/@bandarudevisri.ds"
+          feed_list: "https://medium.com/feed/@devi_blogs"
           template: "$newline- [$title]($url)"
           max_post_count: 5
