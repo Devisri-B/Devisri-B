@@ -146,12 +146,13 @@
 
 ## ✍️ Latest Technical Articles & Publications
 
+<!-- BLOG-POST-LIST:START -->
 - 📖 [A Practical Guide to T-SQL](https://medium.com/@bandarudevisri.ds/a-practical-guide-to-t-sql-5a2f589c5dde)
 - 📖 [Every Microsoft PL-300: Power BI Data Analyst Associate Certification Trap in One Article](https://ai.plainenglish.io/every-microsoft-pl-300-power-bi-data-analyst-associate-certification-trap-in-one-article-plus-the-4ea33451fa68)
 - 📖 [Stop Paying for Tokens: Run Private LLMs on Your Laptop with Docker](https://medium.com/@bandarudevisri.ds/stop-paying-for-tokens-run-private-llms-on-your-laptop-with-docker-0b5e7ac55743)
 - 📖 [Beyond the Curve: A Holistic Guide to Activation Functions (From Sigmoid to SwiGLU)](https://ai.plainenglish.io/beyond-the-curve-a-holistic-guide-to-activation-functions-from-sigmoid-to-swiglu-3e96faaa7a84)
 - 📖 [The Student’s Guide to SAP Certification: How to Get It for Free and Pass with AI](https://medium.com/@bandarudevisri.ds/the-students-guide-to-sap-certification-how-to-get-it-for-free-and-pass-with-ai-d0bbdf78e26a)
-
+<!-- BLOG-POST-LIST:END -->
 ---
 
 ## 📊 GitHub Analytics
