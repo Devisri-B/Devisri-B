@@ -59,8 +59,19 @@
 
 ### 🧠 [Multi-Tenant Knowledge Platform Backend with Adaptive LangGraph Self-RAG](https://github.com/Devisri-B/Multi-Tenant-SaaS-Platform-with-an-AI-Product-Assistant)
 - **Live Platform:** [multi-tenant-saas-platform-with-an-ai.onrender.com](https://multi-tenant-saas-platform-with-an-ai.onrender.com)
-- Built an autonomous **LangGraph Self-RAG state machine** with local NLI entailment scoring (**DeBERTa-v3**), **cutting hallucinations by ~85%** at zero external API cost.
-- Implemented multi-tenant PostgreSQL vector storage with **SQL-scoped IVFFlat indexing (&lt;120ms retrieval latency)** and **135 automated pytest tests (100% pass rate)**.
+- Engineered an adaptive **LangGraph Self-RAG state graph** combining hybrid retrieval (**pgvector** + Postgres FTS via RRF) with local **DeBERTa-v3 NLI cross-encoders** (~20–40ms CPU latency) for zero-cost hallucination verification and dynamic online search fallback.
+- Built a production **Model Context Protocol (FastMCP)** server and autonomous ReAct agent over `stdio`, exposing tenant-isolated vector search and Self-RAG tools directly to **Claude Desktop and Cursor IDE** with zero unauthorized cross-boundary leakage.
+
+### 🔬 [Reasoning & Alignment Post-Training Engine with Critic-Free GRPO & DPO](https://github.com/Devisri-B/DeepAlign-RL)
+- **Live Demo:** [deepalign-rl.streamlit.app](https://deepalign.streamlit.app)
+- Implemented **DeepSeek-style Group Relative Policy Optimization (GRPO)** and **DPO** from scratch in PyTorch, standardizing group-wise advantages to eliminate the critic model and **cut peak training VRAM by ~50%**.
+- Engineered a zero-noise **SymPy symbolic reward verifier** and AST sandbox for mathematical equivalence and Chain-of-Thought format compliance, achieving **74.8% GSM8K / 49.3% MATH accuracy** across automated ablation suites.
+
+### ⚡ [Flow Matching DiT Acceleration Engine with Trajectory Distillation & PTQ](https://github.com/Devisri-B/FlowMatch-Compress)
+- **Live Demo:** [flowmatch-compress.streamlit.app](https://flowmatch-compress.streamlit.app)
+- Implemented **Optimal Transport Flow Matching (OT-CFM)** and **DiT with AdaLN-Zero** from scratch in PyTorch, developing **two-stage distillation (CFG + progressive trajectory consistency)** to eliminate dual-pass evaluations and compress 50 ODE steps into 4 (**22.05× inference speedup**).
+- Engineered a modular **Post-Training Quantization (PTQ) suite** supporting IEEE FP8 (E4M3), per-channel INT8, and grouped INT4 with activation calibration, slashing model footprint by **up to 56.3%** with minimal discretization drift.
+- Integrated an **AutoencoderKL VAE latent pipeline** ($4 \times 32 \times 32$ latent space) for high-resolution $256 \times 256$ generation, validated against photographic benchmarks and visual ODE trajectory profilers.
 
 ### 📈 [Financial Market Risk Forecasting Pipeline with Serverless ONNX Deployment](https://github.com/Devisri-B/Financial-forecasting-pipeline)
 - Built a hybrid deep learning ensemble (**Attention-LSTM + Ridge Regression**) achieving **75% directional accuracy**.
