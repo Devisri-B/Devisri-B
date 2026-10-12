@@ -40,17 +40,17 @@
 
 ---
 
-## 📚 Peer-Reviewed Research Publications
+## 📚 Research Publications
 
-- 📄 **[2026 IEEE Conference on Artificial Intelligence (IEEE CAI 2026)]**  
-  *Optimizing Retrieval-Augmented Generation Through Systematic Human-in-the-Loop Feedback: A Comparative Study* 
-  Evaluated iterative feedback architectures to minimize hallucination rates and optimize document grounding in enterprise RAG systems.
-- 📄 **[MDPI AI (2025)]**  
-  *Comparative Analysis of Large Language Models and Domain-Specific Adaptation for AI-Assisted Medical & Technical Summarization*  
-  Benchmarked zero-shot and fine-tuned transformer architectures for structured domain summarization and factual fidelity.
-- 📄 **[SKASE Journal of Theoretical Linguistics (2024)]**  
-  *Behavioral Pattern Recognition and Sequence Classification Using Deep Transformer Architectures*  
-  Investigated attention mechanisms for behavioral sequence classification.
+| Venue | Paper Title | Core Contribution |
+| :--- | :--- | :--- |
+| **IEEE CAI 2026** | *Retrieval-Augmented AI Feedback in STEM Education* | RAG evaluation pipelines, metacognitive prompting, and factual grounding |
+| **MDPI AI 2026** | *Mapping the LLM Landscape: Cross-Family Survey* | Cross-family survey across 100+ LLMs, RLHF, DPO, and benchmark evals |
+| **SKASE 2025** | *The Behavioural Translation Style Space* | Temporal cognitive dynamics & RL agent behavioral trajectory simulation |
+| **TT8 2026 conference** | *Assessing Pause Thresholds in Process Research* | Parametric & non-parametric latency distribution modeling on HCI data |
+| **Preprint 2026** | *Large Language Models: Architectures & Alignment* | Attention formulations, state-space models, PEFT/LoRA, and alignment |
+| **arXiv 2025** | *From Representation to Enactment: ABC Framework* | Cognitive state transitions and mental representation modeling in NLP |
+
 
 ---
 
