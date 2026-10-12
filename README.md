@@ -147,7 +147,7 @@
 ## ✍️ Latest Technical Articles & Publications
 
 <!-- BLOG-POST-LIST:START -->
-- [Your AI Agent Says It’s Done. It Might Be Lying.](https://ai.plainenglish.io/your-ai-agent-says-its-done-it-might-be-lying-6998c216fe52?source=rss-4d771f77714e------2)
+- [How to Stop AI Agents from Faking Task Completion.](https://ai.plainenglish.io/your-ai-agent-says-its-done-it-might-be-lying-6998c216fe52?source=rss-4d771f77714e------2)
 - [A Practical Guide to T-SQL](https://medium.com/codetodeploy/a-practical-guide-to-t-sql-5a2f589c5dde?source=rss-4d771f77714e------2)
 - [Every Microsoft PL-300: Power BI Data Analyst Associate certification Trap in One Article, Plus the…](https://ai.plainenglish.io/every-microsoft-pl-300-power-bi-data-analyst-associate-certification-trap-in-one-article-plus-the-4ea33451fa68?source=rss-4d771f77714e------2)
 - [Stop Paying for Tokens: Run Private LLMs on Your Laptop with Docker](https://medium.com/codetodeploy/stop-paying-for-tokens-run-private-llms-on-your-laptop-with-docker-0b5e7ac55743?source=rss-4d771f77714e------2)
