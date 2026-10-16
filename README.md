@@ -49,7 +49,7 @@
 | **SKASE 2025** | *The Behavioural Translation Style Space* | Temporal cognitive dynamics & RL agent behavioral trajectory simulation |
 | **TT8 2026 conference** | *Assessing Pause Thresholds in Process Research* | Parametric & non-parametric latency distribution modeling on HCI data |
 | **Preprint 2026** | *Large Language Models: Architectures & Alignment* | Attention formulations, state-space models, PEFT/LoRA, and alignment |
-| **arXiv 2025** | *From Representation to Enactment: ABC Framework* | Cognitive state transitions and mental representation modeling in NLP |
+| **MDPI Behavioral Sciences 2026** | *From Representation to Enactment: ABC Framework* | Cognitive state transitions and mental representation modeling in NLP |
 
 
 ---
